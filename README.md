@@ -80,7 +80,7 @@ The assistant follows a safety-first decision flow:
 1. Detect the message language and extract any relevant document text.
 2. Apply deterministic rules for urgent symptoms and self-harm indicators.
 3. Immediately provide emergency guidance for high-risk cases.
-4. Use OpenAI only for low- and moderate-risk informational responses.
+4. Use OpenAI only for low and moderate-risk informational responses.
 5. Validate the generated answer to avoid diagnosis, unsafe dosage guidance, or false reassurance.
 6. Direct users to a doctor when symptoms are serious, persistent, or unclear.
 
@@ -121,7 +121,8 @@ copy .env.example .env
 Add your own credentials to `.env`.
 
 ```env
-OPENAI_API_KEY=your_openai_key
+OPENAI_API_KEY=your_openai_api_key
+OPENAI_MODEL=gpt-4.1
 WHATSAPP_VERIFY_TOKEN=your_verify_token
 WHATSAPP_ACCESS_TOKEN=your_whatsapp_access_token
 WHATSAPP_PHONE_NUMBER_ID=your_phone_number_id
